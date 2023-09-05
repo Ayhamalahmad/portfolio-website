@@ -1,10 +1,8 @@
 import { Header } from "./files";
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <div className="bg-primary container">
+    <Header/>
+  </div>
   );
 }
-
-export default App;
