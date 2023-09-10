@@ -1,5 +1,4 @@
 import { MdOutlinePhoneInTalk } from "react-icons/md";
-import { FiMenu } from "react-icons/fi";
 import "./_header.scss";
 import { motion } from "framer-motion";
 import { headerVariants } from "../../utils/motion";
