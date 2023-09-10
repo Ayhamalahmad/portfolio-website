@@ -1,8 +1,10 @@
 @use "../css/sass/utils/variables" as *;
+@use "../css/sass/utils/placeholders" as *;
 @use "../css/sass/base/typography" as *;
 @use "../css/sass/utils/mixins" as *;
 @use "../css/sass/utils/functions" as *;
-@use "../css/sass/pages/globalpage" as *;
 @use "../css/sass/layout/grid" as *;
+@use "../css/sass/pages/globalpage" as *;
+// @use "../css/sass/layout/header" as *;
 @use "../css/sass/pages/home" as *;
 @use "../css/sass/layout/footer" as *;

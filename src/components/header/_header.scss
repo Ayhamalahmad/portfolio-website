@@ -1,1 +1,143 @@
 @use "../../assets/css/sass/utils/variables" as *;
+@use "../../assets/css/sass/utils/placeholders" as *;
+@use "../../assets/css/sass/utils/mixins" as *;
+/*Start Header*/
+.wrapper {
+  background: $bg-primary;
+  transform: none;
+  position: relative;
+  z-index: 99;
+  opacity: 1;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease;
+  &.scrolled {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  }
+  .container {
+    position: relative;
+    font-weight: 500;
+    @include flex(space-between, center);
+    @media #{$maxSmall} {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $primary;
+    }
+    .menu {
+      font-size: 1rem;
+      text-transform: uppercase;
+      @include flex(space-between, center);
+      gap: 1.5rem;
+      cursor: pointer;
+      @media #{$maxSmall} {
+        flex: 100%;
+        @include flex(center, start);
+        flex-direction: column;
+        order: 1;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        display: none;
+        margin-top: 10px;
+        &.show {
+          display: flex;
+          opacity: 1;
+        }
+      }
+      li {
+        a {
+          color: inherit;
+        }
+        &:hover {
+          color: $secondary;
+        }
+      }
+      .phone {
+        @include flex(center, center);
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        i,
+        svg {
+          background-color: $light;
+          color: $secondary;
+          box-shadow: $primary-shadow;
+          font-size: 40px;
+          border-radius: 50%;
+          padding: 10px;
+        }
+      }
+    }
+    .menu-icon {
+      display: none;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      width: 28px;
+      height: 25px;
+      //
+      @media #{$maxSmall} {
+        display: initial;
+      }
+      i,
+      svg {
+        font-size: 30px;
+      }
+      // icon
+      span {
+        background-color: $primary;
+        cursor: pointer;
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        border-radius: 10px;
+        transition: all 0.3s;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 20px;
+          height: 2px;
+          left: 0;
+          background-color: $primary;
+          transition: all 0.3s;
+          cursor: pointer;
+          border-radius: 10px;
+          top: -7px;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          width: 20px;
+          height: 2px;
+          left: 0;
+          background-color: $primary;
+          transition: all 0.3s;
+          border-radius: 10px;
+          top: 8px;
+        }
+        &.rotate {
+          background-color: initial;
+          &::after,
+          &::before {
+            top: -2px;
+            width: 30px;
+          }
+          &::after {
+            rotate: 135deg;
+          }
+          &::before {
+            rotate: 40deg;
+          }
+        }
+      }
+      //
+    }
+  }
+}
+/*End Header*/

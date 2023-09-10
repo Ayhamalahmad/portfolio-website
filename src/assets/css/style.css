@@ -1,0 +1,180 @@
+* {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Eudoxus Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  height: 100vh;
+}
+
+.innerWidth {
+  width: 100%;
+}
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+.paddings {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+@media (min-width: 1280px), (min-width: (min-width:768px)) {
+  .paddings {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.xPaddings {
+  padding-left: 1.5rem;
+  /* 24px */
+  padding-right: 1.5rem;
+  /* 24px */
+}
+@media (min-width: 640px) {
+  .xPaddings {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.yPaddings {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 640px) {
+  .yPaddings {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .yPaddings {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.topPaddings {
+  padding-top: 3rem;
+}
+@media (min-width: 640px) {
+  .topPaddings {
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .topPaddings {
+    padding-top: 2rem;
+  }
+}
+
+.bottomPaddings {
+  padding-bottom: 3rem;
+}
+@media (min-width: 640px) {
+  .bottomPaddings {
+    padding-bottom: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .bottomPaddings {
+    padding-bottom: 2rem;
+  }
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-items: end;
+}
+
+.primaryText {
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 2.5rem;
+  }
+}
+
+.secondaryText {
+  line-height: 50px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  .secondaryText {
+    font-size: 1.1rem;
+    line-height: 40px;
+  }
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/*Start Footer*/
+/*End Footer*//*# sourceMappingURL=style.css.map */

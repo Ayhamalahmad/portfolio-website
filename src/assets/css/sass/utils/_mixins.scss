@@ -32,3 +32,19 @@
     @content;
   }
 }
+// Define a mixin with parameters for flexibility
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Example usage with default values (center both horizontally and vertically)
+// .myElement {
+//   @include flexCenter;
+// }
+
+// // Example usage with custom values (center horizontally, flex-start vertically)
+// .anotherElement {
+//   @include flexCenter(center, flex-start);
+// }
