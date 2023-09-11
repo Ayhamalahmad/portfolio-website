@@ -48,7 +48,9 @@
         &.show {
           display: flex;
           opacity: 1;
+          animation: myAnimation .3s ease-in-out;
         }
+       
       }
       li {
         a {
@@ -143,3 +145,19 @@
   }
 }
 /*End Header*/
+@include keyframes(myAnimation) {
+  0% {
+    transform: translateY(-179%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@include keyframes(myAnimation2) {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-179%);
+  }
+}
