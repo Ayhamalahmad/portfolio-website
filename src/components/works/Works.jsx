@@ -2,9 +2,7 @@ import "./_works.scss";
 import { workExp } from "../../utils/data";
 import { motion } from "framer-motion";
 import {
-  draw,
   fadeIn,
-  slideIn,
   staggerChildren,
   textVariant2,
   zoomIn,

@@ -1,4 +1,4 @@
-import { Header,Hero,Experties,Works } from "./files";
+import { Header,Hero,Experties,Works,Portfolio } from "./files";
 export default function App() {
   return (
     // className="bg-primary"
@@ -7,6 +7,7 @@ export default function App() {
     <Hero/>
     <Experties/>
     <Works/>
+    <Portfolio/>
   </div>
   );
 }

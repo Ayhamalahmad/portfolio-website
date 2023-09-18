@@ -1,0 +1,51 @@
+@use "../../assets/css/sass/utils/variables" as *;
+@use "../../assets/css/sass/utils/placeholders" as *;
+@use "../../assets/css/sass/utils/mixins" as *;
+/*Start Portfolio*/
+.portfolio{
+    background-color: $light;
+    overflow: hidden;
+    .container{
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 2rem;
+    .heading{
+        @include flex(space-between, flex-end);
+        flex-wrap: wrap;
+        width: 100%;
+        @media #{$minSmall} {
+            padding: 0 20px;
+        }
+        div{
+            span{}
+            p{
+                margin-top: 10px;
+            }
+        }
+        
+        .explore{
+            text-decoration: underline;
+            color: $mustard;
+            cursor: pointer;
+        }
+    }
+    // 
+    .show-case{
+        @include flex(space-around, center);
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        img{
+            max-height: 18rem;
+            cursor: pointer;
+            box-shadow: $secondary-shadow;
+            max-width: 25rem;
+            border-radius: 20px;
+            @media #{$maxMobile} {
+                width: 100%;
+            }
+        }
+    }
+    }
+}
+/*End Portfolio*/
