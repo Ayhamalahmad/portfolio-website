@@ -17,7 +17,9 @@
             padding: 0 20px;
         }
         div{
-            span{}
+            span{
+                text-transform: capitalize;
+            }
             p{
                 margin-top: 10px;
             }
