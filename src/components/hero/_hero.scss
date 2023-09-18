@@ -3,6 +3,7 @@
 @use "../../assets/css/sass/utils/mixins" as *;
 /* Start Hero Section*/
 .hero {
+  overflow: hidden;
   .container {
     position: relative;
     z-index: 1;

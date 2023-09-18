@@ -19,5 +19,13 @@ $bg-primary: #f8f7f1;
 $secondary: #286F6C;
 $secondary-white: #E7E7E7;
 $light: #fff;
+$bg-icon-1:#286F6C;
+$bg-icon-2:#EEC048;
+$bg-icon-3:#F26440;
+$custom-color: #0000000d;
+$semi-transparent-black: rgba(0, 0, 0, 0.04);
+// $semi-transparent-black: #0000000d;
+
 // Shadow
-$primary-shadow:0 4px 4px #0000000d;
+$primary-shadow:0 4px 4px $semi-transparent-black;
+$secondary-shadow: 0px 21px 13px $semi-transparent-black;
