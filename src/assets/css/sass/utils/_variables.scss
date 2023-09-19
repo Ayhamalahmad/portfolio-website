@@ -29,7 +29,14 @@ $bg-line:linear-gradient(
     rgba(255, 255, 255, 0) 0%
   );
 // $semi-transparent-black: #0000000d;
+$transparent-black: rgba(0, 0, 0, 0.13); // Equivalent to #00000021
+$lightBlack: rgb(0 0 0 / 5%);
+$lightGray: rgb(234, 234, 234);
+$mediumGray: rgb(172, 172, 172);
+
 
 // Shadow
 $primary-shadow:0 4px 4px $semi-transparent-black;
 $secondary-shadow: 0px 21px 13px $semi-transparent-black;
+$th3-shadow: 0 21px 13px $transparent-black;
+$th4-shadow: $lightBlack -3px 11px 13px 0px;

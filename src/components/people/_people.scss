@@ -1,0 +1,101 @@
+@use "../../assets/css/sass/utils/variables" as *;
+@use "../../assets/css/sass/utils/placeholders" as *;
+@use "../../assets/css/sass/utils/mixins" as *;
+/*Start People*/
+.people {
+  background-color: $bg-primary;
+  color: $primary;
+  .container {
+    .heading {
+      @include flex(center, center);
+      flex-direction: column;
+      text-transform: capitalize;
+      .talk-about-us {
+      }
+      p {
+        line-height: 30px;
+      }
+      .job-description {
+        margin-top: 2rem;
+      }
+    }
+
+    /* Carousal */
+    .comments {
+    
+      .slider {
+        //Start  fix for spacing between slides
+          .slick-list {
+            margin: 0 -7px;
+            box-sizing: initial;
+            padding: 80px 0;
+            overflow-y: visible;
+        
+            .slick-slide > div {
+              padding: 0 20px;
+            }
+        
+            @media (min-width: $lg) {
+              .slick-slide.slick-active.slick-current + .slick-slide {
+                transition: all 1000ms ease-out;
+                transform: scale(1.1) translateY(-30px);
+              }
+            }
+          }
+        //End fix for spacing between slides
+        i,svg,button{
+          &::before{
+            color: $primary;
+          }
+        }
+        .comment {
+          cursor: grab;
+          display: flex !important;
+          @include flex(center, center) ;
+          box-shadow: $th4-shadow;
+          padding: 2rem;
+          flex-direction: column;
+          gap: 1rem;
+          background-color: $light;
+          border-radius: 20px;
+          position: relative;
+          img {
+            margin: auto;
+            border-radius: 100%;
+            width: 3.5rem;
+            height: 3.5rem;
+            position: absolute;
+            top: -2rem;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
+          }
+          p {
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 25px;
+          }
+          .line {
+            width: 100%;
+            border: .2px solid $lightGray;
+          }
+          .bio {
+            >*{
+              display: block;
+              text-align: center;
+            }
+            span {
+            }
+            .name{
+              font-weight: 600;
+              margin-bottom: 5px;
+            }
+            .post{
+              font-size: .7rem;
+              color: $mediumGray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*End People*/
