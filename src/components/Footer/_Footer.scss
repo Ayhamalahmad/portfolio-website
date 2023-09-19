@@ -1,0 +1,64 @@
+@use "../../assets/css/sass/utils/variables" as *;
+@use "../../assets/css/sass/utils/placeholders" as *;
+@use "../../assets/css/sass/utils/mixins" as *;
+/* START FOOTER*/
+.footer {
+  background-color: $light;
+  .container {
+    @include flex(center, center);
+    gap: 2rem;
+    @media #{$maxMobile} {
+        flex-direction: column;
+        align-items: start;
+    }
+    // Left
+    .left {
+        flex: 3;
+        >*{
+            display: block;
+        }
+      span {
+      }
+      > :nth-child(1) {
+      }
+      > :nth-child(2) {
+        margin-top: 3rem;
+        a {
+          color: $mustard;
+          text-decoration: underline;
+        }
+      }
+    }
+    // Right
+    .right {
+        flex: 1;
+      .info {
+        margin-bottom: 1rem;
+        >*{
+            display: block;
+        }
+        span {
+        }
+        p {
+        }
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @media #{$maxMobile} {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        li {
+            cursor: pointer;
+            transition: color .3s ease-in-out;
+            &:hover{
+                color: $secondary;
+            }
+        }
+      }
+    }
+  }
+}
+/* END FOOTER*/

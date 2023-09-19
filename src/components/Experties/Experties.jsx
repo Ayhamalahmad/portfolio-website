@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion.js";
 export default function Experties() {
   return (
-    <motion.div
+    <motion.section id="experties"
 
     variants={staggerContainer}
     initial="hidden"
@@ -55,6 +55,6 @@ export default function Experties() {
           </div>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 }

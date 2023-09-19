@@ -13,7 +13,7 @@ import {
 } from "../../utils/motion";
 export default function People() {
   return (
-    <motion.section
+    <motion.section id="testimonials"
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"

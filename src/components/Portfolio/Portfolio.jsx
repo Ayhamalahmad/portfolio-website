@@ -11,7 +11,7 @@ import {
 } from "../../utils/motion";
 export default function Portfolio() {
   return (
-    <motion.section
+    <motion.section id="portfolio"
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
