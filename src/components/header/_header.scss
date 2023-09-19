@@ -13,6 +13,7 @@
   transition: all 0.3s ease;
   // 
   &.scrolled {
+  display: block;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
       rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
@@ -57,7 +58,7 @@
           color: inherit;
         }
         &:hover {
-          color: $secondary;
+          color: $teal;
         }
       }
       .phone {
@@ -67,7 +68,7 @@
         i,
         svg {
           background-color: $light;
-          color: $secondary;
+          color: $teal;
           box-shadow: $primary-shadow;
           font-size: 40px;
           border-radius: 50%;

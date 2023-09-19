@@ -5,6 +5,7 @@
 .people {
   background-color: $bg-primary;
   color: $primary;
+  position: relative;
   .container {
     .heading {
       @include flex(center, center);

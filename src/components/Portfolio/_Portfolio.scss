@@ -4,6 +4,7 @@
 /*Start Portfolio*/
 .portfolio{
     background-color: $light;
+    color: $primary;
     overflow: hidden;
     .container{
     @include flex(center, center);

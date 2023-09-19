@@ -4,6 +4,7 @@
 /* START FOOTER*/
 .footer {
   background-color: $light;
+  color: $primary;
   .container {
     @include flex(center, center);
     gap: 2rem;
@@ -54,7 +55,7 @@
             cursor: pointer;
             transition: color .3s ease-in-out;
             &:hover{
-                color: $secondary;
+                color: $teal;
             }
         }
       }

@@ -26,28 +26,27 @@ export default function Header() {
       initial="hidden"
       whileInView="show"
       variants={headerVariants}
-      viewport={{ once: true, amount: 0.25 }}
-      // style={{boxShadow: headerShadow}}
+      viewport={{ once: false, amount: 0.25 }}
       className={`wrapper paddings ${scrolled ? "scrolled" : ""}`}
     >
       <div className="container">
-        <a href="#" className="logo">
+        <a onClick={() => SetClicked(false)} href="#hero" className="logo">
           binjan
         </a>
         <ul className={`menu ${clicked ? "show" : ""}`}>
-          <li>
-            <a href="#services">services</a>
+          <li onClick={() => SetClicked((e) => !e)}>
+            <a href="#experties">services</a>
           </li>
-          <li>
+          <li onClick={() => SetClicked((e) => !e)}>
             <a href="#experience">experience</a>
           </li>
-          <li>
+          <li onClick={() => SetClicked((e) => !e)}>
             <a href="#portfolio">portfolio</a>
           </li>
-          <li>
+          <li onClick={() => SetClicked((e) => !e)}>
             <a href="#testimonials">testimonials</a>
           </li>
-          <li className="phone">
+          <li onClick={() => SetClicked((e) => !e)}  className="phone">
             <p href="">+001 (313) 345 678</p>
             <MdOutlinePhoneInTalk />
           </li>

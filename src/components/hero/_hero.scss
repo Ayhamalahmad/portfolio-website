@@ -4,6 +4,8 @@
 /* Start Hero Section*/
 .hero {
   overflow: hidden;
+  background-color: $bg-primary;
+  color: $primary;
   .container {
     position: relative;
     z-index: 1;

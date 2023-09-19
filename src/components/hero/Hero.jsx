@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 export default function Hero() {
   return (
-    <section className="paddings hero">
+    <section id="hero" className="paddings hero">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

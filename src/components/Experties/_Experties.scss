@@ -2,6 +2,8 @@
 @use "../../assets/css/sass/utils/placeholders" as *;
 @use "../../assets/css/sass/utils/mixins" as *;
 .experties {
+  background-color: $light;
+  color: $primary;
   .container {
     @include flex(center, start);
     gap: 2rem;

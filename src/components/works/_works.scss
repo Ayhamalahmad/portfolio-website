@@ -3,6 +3,8 @@
 @use "../../assets/css/sass/utils/mixins" as *;
 /* Start Works */
 .works {
+  background-color: $bg-primary;
+  color: $primary;
   .container {
     @include flex(center, center);
     flex-direction: column;
